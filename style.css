@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    --fonte-destaque: 'Poppins', sans-serif;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+header{
+    height: 500px;
+    background-image: url(imagens/pexels-riccardo-bertolo-4245826.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    color: white;
+}
+
+.top-header{
+    display: flex;
+    font-family: var(--fonte-destaque);
+}
+
+.top-header .logo{
+    width: 20%;
+}
+
+img#logo{
+    width: 120px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.top-header .menu{
+    width: 80%;
+    padding: 1rem;
+}
+
+.top-header a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.2em;
+    transition: 1s;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.menu a:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+.bottom-header{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+}
+
+.bottom-header h1{
+    margin-top: 80px;
+    margin-bottom: 1rem;
+    color: #003847;
+}
+
+.bottom-header p{
+    margin-bottom: 2rem;
+    color: #003847;
+}
+
+.pesquisa{
+    height: 30px;
+    width: 200px;
+    border-radius: 6px;
+    margin-left: 20px;
+    border: 1px solid #005168 ;
+    outline: none;
+    text-indent: 5px;
+}
+
+.pesquisa::placeholder{
+    text-indent: 5px;
+}
+.pesquisa:first-child{
+    margin-left: 0;
+}
+
+.pesquisa:hover{
+    background-color: #eeeeee;
+}
+
+.botao{
+    height: 30px;
+    width:150px;
+    background-color: #003847;
+    color: white;
+    font: var(--fonte-destaque);
+    border-radius: 10px;
+    margin-left: 20px;
+    border: 1px solid #005168;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: 1s;
+}
+
+.botao:hover{
+    background-color: #143c5e;
+}
+
+/*~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~*/
+main{
+    background-color: #e9f0f1;
+}
+
+main .header-popular{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    padding-top: 30px;
+}
+
+main .header-popular{
+    color: #002029;
+}
+
+main .header-popular p{
+    margin-top: 10px;
+    color:#002029be;
+}
+
+main .container-popular{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    font-family: var(--fonte-destaque);
+}
+
+main .local-popular{
+    background-color: grey;
+    height: 250px;
+    width: 200px;
+    padding: 210px 0 0 0.7rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-left: 4%;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+}
+
+main .local-popular:first-child{
+    margin-left: 0;
+}
+
+#japan{
+    background-image: url(imagens/japan.jpg);
+}
+
+#seoul{
+    background-image: url(imagens/seoul.jpg);
+}
+
+#paris{
+    background-image: url(imagens/paris.jpg);
+}
+
+#london{
+    background-image: url(imagens/london.jpg);
+}
+
+main .header-value{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+}
+
+main .header-value{
+    color: #002029;
+}
+
+main .header-value p{
+    margin-top: 10px;
+    color:#002029be;
+}
+
+main .container-value{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    font-family: var(--fonte-destaque);
+}
+
+main .local-value{
+    background-color: grey;
+    height: 250px;
+    width: 250px;
+    padding: 150px 0 0 0rem;
+    color: white;
+    font-weight: 500;
+    margin-left: 4%;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.418);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+main .local-value:first-child{
+    margin-left: 0;
+}
+main .local-value .info{
+    display: block;
+    background-color:#e9f0f1;
+    width: 250px;
+    height: 100px;
+    color: #002029;
+    font-family: var(--fonte-destaque);
+    padding: .5rem;
+    border-radius: 0 0 8px 8px;
+
+}
+
+main .local-value .info p{
+    font-size: 0.7em;
+    margin-bottom: 5px;
+    color: #002029be
+
+}
+
+main .local-value .info span{
+    font-size: 0.7em;
+    background: linear-gradient(to right, #097b9bde, #097b9b7c);
+    margin-left: -8px;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.842);
+    border-radius: 0 2px 2px 0;
+
+}
+
+#pessoa{
+    background-image: url(imagens/pessoa.jpg);
+}
+
+#suiça{
+    background-image: url(imagens/suiça.jpg);
+}
+
+#discover{
+    background-image: url(imagens/discover-japan.jpg);
+}
+
+main .why{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    padding-top: 10px;
+    height: 85vh;
+    background-image: url(imagens/pexels-denis-linine-753772.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+}
+
+main .why h1{
+    padding-top: 30px;
+}
+
+main .why > p{
+    color: #002029;
+}
+
+main .icones-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+main .icones-container .icones{
+    width: 300px;
+}
+
+main .icones img{
+    border-radius: 40%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+main .textos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+main .textos-container .textos{
+    width: 300px;
+}
+
+main .textos h2{
+    font-family: var(--fonte-destaque);
+    color: black;
+}
+
+
+main .textos p{
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    font-weight: 500;
+    color: #000000;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+main .testemunhos-container{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    padding-top: 10px;
+    height: 85vh;
+}
+
+main .testemunhos-container h1{
+    padding-top: 30px;
+}
+
+main .testemunhos-container > p{
+    color: #002029;
+}
+
+main .aspas-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+main .aspas-container .aspas{
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+main .aspas-container .aspas:first-child{
+    margin-left: 0;
+}
+
+main .falas-container{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+main .falas-container .falas{
+    width: 300px;
+    text-align: justify;
+    padding-top: 0;
+    margin-left: 30px;
+}
+
+main .falas-container .falas:first-child{
+    margin-left: 0;
+}
+main .falas p{
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    font-weight: 500;
+    color: #002029;
+}
+
+main .falas p:last-child{
+    text-align: center;
+    color: #04617a;
+    font-weight: bold;
+}
+
+footer{
+    height: 60vh;
+    background-color: #002029;
+    text-align: justify;
+}
+
+footer .footer-container{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footer-child{
+    width: 50%;
+    padding: 10px 10px 0px 10px;
+    font-family: var(--fonte-destaque);
+    color: white;
+}
+
+footer .footer-child h3{
+    color: white;
+    margin: 30px;
+    font-size: 0.8em;
+}
+
+footer .footer-child p{
+    margin: 30px;
+    font-size: 0.8em;
+}
+
+footer .footer-child{
+    color: #eeeeeed0;
+}
+footer .img-footer{
+    display: flex;
+    margin: 30px;
+}
+footer .img-footer img{
+    margin: auto;
+}
+
+footer .copy{
+    font-family: var(--fonte-destaque);
+    color: #eeeeeed0;
+    text-align: center;
+    font-size: 0.8em;
+}
